@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>My test site</title>
+</head>
+<body>
+    <nav clas="menu">Kawiarnia Pod Toppolą</nav>
+    <div class="main">
+        <article class="main-article"></article>
+        <img class="main-img" src="coffee.jpg"></img>
+    </div>
+    <footer class="footer">Created by Jacek</footer>
+
+    <script>
+        var ob=document.querySelector("article.main-article");
+        setInterval(function(){ajaxQuery(ob);},1000);
+        function ajaxQuery(obj){
+            var ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function() {
+                if (ajax.readyState == 4) {
+                    obj.innerHTML=ajax.responseText;
+                }
+            };
+            ajax.open("GET", "read.php", true);
+            ajax.send(null);
+        }
+    </script>
+
+</body>
+</html>

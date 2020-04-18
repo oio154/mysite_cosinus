@@ -1,0 +1,68 @@
+
+nav{
+    
+    line-height: 2em;
+    /* Sprawmy aby ten nav na pewno zachował się jak
+    element blokowy */
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    text-align: center;
+    font-size: 2.5em;
+}
+
+div.main{
+    
+    margin-top: 6.5em;
+    position: relative;
+    /* display: flex; */
+    /* align-items: flex-start; */
+}
+img{
+    width: 50%;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;*/
+}
+
+article{
+    
+    width: 50%;
+    border-right: black solid 50%;
+    
+    height: 100%;
+    
+}
+article h1{
+    
+    line-height: 6em;
+    text-align: center;
+    margin: 0 auto;
+}
+article h3{
+    text-align: right;
+    margin-right: 10px;
+}
+
+footer{
+    
+    line-height: 2em;
+    font-size: .8em;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    font-size: 12px;
+}
